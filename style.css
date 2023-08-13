@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+    width: 195px;
+    height: 53px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.user-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-banner {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+}
+
+.main-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+    animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.banner-text h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.value-prop {
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+}
+
+.value-text {
+    text-align: center;
+}
+
+.value-text h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.value-text p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.goal-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.goal-icon {
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.goal-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.goal-icon h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.goal-icon p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    max-width: 180px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.goal-icon:hover {
+    transform: scale(1.05);
+}
+
+.goal-icon:hover p {
+    opacity: 1;
+}
+/* Previous CSS styles */
+
+.goal-details {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.progress-bar-container {
+    width: 70%;
+    margin: 0 auto;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.5s ease-in-out;
+}
+
+.dynamic-graph {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    width: 70%;
+    margin: 0 auto;
+    height: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #f2f2f2;
+}
+
+.graph-bar {
+    width: 20px;
+    background-color: #4CAF50;
+    margin: 0 5px;
+    transition: height 0.5s ease-in-out;
+}
+
+
+/* Previous CSS styles */
+
+.savings-reminder {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.reminder {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+#required-amount {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#save-now {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#save-now:hover {
+    background-color: #45a049;
+}
+
+/* Previous CSS styles */
+
+.earning-interest {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.interest-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.interest-info p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.interest-graph {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    width: 70%;
+    margin: 0 auto;
+    height: 150px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #f2f2f2;
+}
+
+.graph-bar {
+    width: 20px;
+    background-color: #4CAF50;
+    margin: 0 5px;
+    transition: height 0.5s ease-in-out;
+}
+
+footer {
+    background-color: black;
+    color: rgb(57, 19, 19);
+    padding: 9px 20px;
+}
+
+
